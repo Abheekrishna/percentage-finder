@@ -8,7 +8,7 @@ const createInputs = (count) => {
     if(count > 0) {
         for(let i = 0; i < count; i++) {
             const input = document.createElement('input');
-            input.style.backgroundColor = 'red';
+            input.classList.add('input');
             inputDiv.appendChild(input);
         }
     } else {

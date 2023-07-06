@@ -21,8 +21,20 @@ input[type="number"]::-webkit-inner-spin-button,
 
 .input-count {
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 #subjectCount {
     outline: none;
     margin-top: 15px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.input {
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 10px 15px;
 }
