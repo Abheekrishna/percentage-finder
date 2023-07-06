@@ -6,7 +6,7 @@ const inputDiv = document.getElementById('inputs');
 
 const createInputs = (count) => {
     if(count > 0) {
-        for(let i = 0; i < count.length; i++) {
+        for(let i = 0; i < count; i++) {
             const input = document.createElement('input');
             input.style.backgroundColor = 'red';
             inputDiv.appendChild(input);
