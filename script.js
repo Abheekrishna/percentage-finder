@@ -1,6 +1,9 @@
 const subjectCount = document.getElementById('subjectCount');
 const submitBtn = document.getElementById('submit');
 const inputDiv = document.getElementById('inputs');
+const calBtn = document.getElementById('calBtn');
+
+calBtn.style.display = 'none';
 
 
 const scoresArray = [];
@@ -36,18 +39,13 @@ const createInputs = (count) => {
 
             scoresArray.push(input);
             totalArray.push(totalScore);
+            calBtn.style.display = 'block';
         }
     } else {
         return;
     }
-
-    const calculateBtn = document.createElement('input');
-    calculateBtn.classList.add('calculateBtn');
-    calculateBtn.type = 'button';
-    calculateBtn.value = 'Calculate Score';
-    inputDiv.appendChild(calculateBtn);
+    
 }
-
 
 submitBtn.addEventListener('click', () => {
     createInputs(subjectCount.value);
@@ -55,7 +53,21 @@ submitBtn.addEventListener('click', () => {
 });
 
 const calculatePercentage = () => {
-    scoresArray.forEach(arr => {
+    let scoreValue = 0;
+    let totalValue = 0;
 
+    scoresArray.forEach(arr => {
+        scoreValue += Number(arr.value);
     })
+
+    totalArray.forEach(arr => {
+        totalValue += Number(arr.value);
+    })
+    const percentage = Number(scoreValue) / Number(totalValue) * 100;
+    console.log(percentage);
+
+    return percentage;
 }
+
+
+calBtn.addEventListener('click' , calculatePercentage)
