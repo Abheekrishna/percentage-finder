@@ -30,17 +30,15 @@ input[type="number"]::-webkit-inner-spin-button,
 .inputs {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
-.input {
+.input,.inputTotal {
     outline: none;
     margin-bottom: 15px;
-    padding: 10px 15px;
-    width: 20%;
     margin-right: 15px;
+    padding: 10px 0px 10px 15px;
 }
-.inputTotal {
-    outline: none;
-    margin-bottom: 15px;
+.calculateBtn {
     padding: 10px 15px;
-    width: 20%;
+    cursor: pointer;
 }

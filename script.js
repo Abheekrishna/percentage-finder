@@ -33,6 +33,12 @@ const createInputs = (count) => {
     } else {
         return;
     }
+
+    const calculateBtn = document.createElement('input');
+    calculateBtn.classList.add('calculateBtn');
+    calculateBtn.type = 'button';
+    calculateBtn.value = 'Calculate Score';
+    inputDiv.appendChild(calculateBtn);
 }
 
 
