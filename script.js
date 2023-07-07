@@ -2,6 +2,7 @@ const subjectCount = document.getElementById('subjectCount');
 const submitBtn = document.getElementById('submit');
 const inputDiv = document.getElementById('inputs');
 const calBtn = document.getElementById('calBtn');
+const containerDiv = document.getElementById('container');
 
 calBtn.style.display = 'none';
 
@@ -64,10 +65,17 @@ const calculatePercentage = () => {
         totalValue += Number(arr.value);
     })
     const percentage = Number(scoreValue) / Number(totalValue) * 100;
+    
+    const titleDiv = document.createElement('div');
+
+    titleDiv.innerHTML = `<p class="percentage">Here's your percentage: <span class="percentBold">${percentage}</span></p>`;
+    containerDiv.appendChild(titleDiv)
+    
+
     console.log(percentage);
 
     return percentage;
 }
 
 
-calBtn.addEventListener('click' , calculatePercentage)
+calBtn.addEventListener('click' , calculatePercentage);
