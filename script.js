@@ -4,6 +4,7 @@ const inputDiv = document.getElementById('inputs');
 
 
 const scoresArray = [];
+const totalArray = [];
 
 
 
@@ -33,7 +34,8 @@ const createInputs = (count) => {
 
             inputDiv.appendChild(inputsDiv);
 
-            scoresArray.push(input, totalScore);
+            scoresArray.push(input);
+            totalArray.push(totalScore);
         }
     } else {
         return;
@@ -50,7 +52,10 @@ const createInputs = (count) => {
 submitBtn.addEventListener('click', () => {
     createInputs(subjectCount.value);
     subjectCount.value = '';
-    scoresArray.forEach(arr => {
-        console.log(arr.value)
-    })
 });
+
+const calculatePercentage = () => {
+    scoresArray.forEach(arr => {
+
+    })
+}
