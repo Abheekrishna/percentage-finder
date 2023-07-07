@@ -82,3 +82,15 @@ input[type="number"]::-webkit-inner-spin-button,
 .percentBold {
     font-weight: 600;
 }
+
+a {
+    color: #1cc75a;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}

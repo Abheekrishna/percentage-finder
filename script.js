@@ -3,6 +3,7 @@ const submitBtn = document.getElementById('submit');
 const inputDiv = document.getElementById('inputs');
 const calBtn = document.getElementById('calBtn');
 const containerDiv = document.getElementById('container');
+const year = document.getElementById('year');
 
 calBtn.style.display = 'none';
 
@@ -79,3 +80,6 @@ const calculatePercentage = () => {
 
 
 calBtn.addEventListener('click' , calculatePercentage);
+
+const newYear = (new Date()).getFullYear();
+year.innerText = newYear;
