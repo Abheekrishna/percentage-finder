@@ -65,10 +65,11 @@ const calculatePercentage = () => {
         totalValue += Number(arr.value);
     })
     const percentage = Number(scoreValue) / Number(totalValue) * 100;
+    const formattedPercentage = percentage.toFixed(2);
     
     const titleDiv = document.createElement('div');
 
-    titleDiv.innerHTML = `<p class="percentage">Here's your percentage: <span class="percentBold">${percentage}</span></p>`;
+    titleDiv.innerHTML = `<p class="percentage">Here's your percentage: <span class="percentBold">${formattedPercentage}</span></p>`;
     containerDiv.appendChild(titleDiv)
     
 
