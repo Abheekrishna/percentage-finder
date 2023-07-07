@@ -8,7 +8,7 @@
 }
 
 body {
-    margin: 0 100px;
+    margin-top: 20px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
