@@ -73,7 +73,6 @@ const calculatePercentage = () => {
     containerDiv.appendChild(titleDiv)
     
 
-    console.log(percentage);
 
     return percentage;
 }
