@@ -80,6 +80,7 @@ input[type="number"]::-webkit-inner-spin-button,
 
 .percentage {
     font-size: 1.2rem;
+    margin-top: 25px;
 }
 .percentBold {
     font-weight: 600;
