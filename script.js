@@ -33,6 +33,7 @@ const createInputs = (count) => {
 
             input.classList.add('input');
             totalScore.classList.add('inputTotal');
+            inputsDiv.classList.add('inputFlexDiv');
 
             inputsDiv.appendChild(input);
             inputsDiv.appendChild(totalScore);
@@ -53,6 +54,8 @@ submitBtn.addEventListener('click', () => {
     createInputs(subjectCount.value);
     subjectCount.value = '';
 });
+
+
 
 const calculatePercentage = () => {
     let scoreValue = 0;
