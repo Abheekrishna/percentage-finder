@@ -101,11 +101,10 @@ footer {
 
 
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
     .input-count {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
     }
     .inputsFlex {
         display: flex;
@@ -121,6 +120,15 @@ footer {
         display: flex;
         justify-content: center;
     }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .calculateBtn {
+        width: 60%;
+    }
     .input {
         width: 30%;
     }
@@ -128,3 +136,6 @@ footer {
         width: 30%;
     }
   }
+
+
+ 
